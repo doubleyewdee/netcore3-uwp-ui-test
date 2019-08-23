@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test_uwp_netcore3"
+        xmlns:xamlhost="clr-namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -14,6 +15,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+        <xamlhost:WindowsXamlHost InitialTypeName="Microsoft.Toolkit.Uwp.UI.Controls.TabView" Grid.Column="1" Grid.Row="1" x:Name="tabView" ChildChanged="TabView_ChildChanged" />
         <TextBlock Grid.Row="2" Grid.Column="1" FontSize="72" HorizontalAlignment="Center">Some text!</TextBlock>
     </Grid>
 </Window>

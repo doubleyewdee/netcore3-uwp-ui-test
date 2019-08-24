@@ -35,9 +35,11 @@ namespace test_uwp_netcore3
                 return;
             }
 
-            tabView.Header = new TextBlock { Text = "A dumb header", FontSize = 16 };
-            tabView.Items.Add(new TextBlock { Text = "A tab?" });
-            tabView.Items.Add(new TextBlock { Text = "Another tab?" });
+            tabView.Header = new Windows.UI.Xaml.Controls.TextBlock { Text = "A dumb header", FontSize = 16 };
+            tabView.Items.Add(new Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem { Header = "Tab 1", Content = new Windows.UI.Xaml.Controls.TextBlock { Text = "A tab? " } });
+            tabView.Items.Add(new Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem { Header = "Tab 1", Content = new Windows.UI.Xaml.Controls.TextBlock { Text = "Another tab? " } });
+            //tabView.Items.Add(new Windows.UI.Xaml.Controls.TextBlock { Text = "A tab?" });
+            //tabView.Items.Add(new Windows.UI.Xaml.Controls.TextBlock { Text = "Another tab?" });
 
             //tabView.Resources.Add(new KeyValuePair<object, object>("TabViewItemHeaderMinHeight", (double)40));
             //tabView.Resources.Add(new KeyValuePair<object, object>("TabViewItemHeaderMinWidth", (double)40));

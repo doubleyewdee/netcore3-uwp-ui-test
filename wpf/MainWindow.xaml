@@ -15,7 +15,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <xamlhost:WindowsXamlHost InitialTypeName="Microsoft.Toolkit.Uwp.UI.Controls.TabView" Grid.Column="1" Grid.Row="1" x:Name="tabView" ChildChanged="TabView_ChildChanged" />
-        <TextBlock Grid.Row="2" Grid.Column="1" FontSize="72" HorizontalAlignment="Center">Some text!</TextBlock>
+        <xamlhost:WindowsXamlHost InitialTypeName="Microsoft.Toolkit.Uwp.UI.Controls.TabView" Grid.Column="0" Grid.Row="0" x:Name="tabView" ChildChanged="TabView_ChildChanged" />
+        <TextBlock Grid.Row="1" Grid.Column="0" FontSize="72" HorizontalAlignment="Center">Some text!</TextBlock>
     </Grid>
 </Window>

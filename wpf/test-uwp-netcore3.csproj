@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="6.0.0-preview7.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\uwp-shim\uwp-shim.csproj" />
+  </ItemGroup>
+
 </Project>
